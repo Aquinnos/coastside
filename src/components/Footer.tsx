@@ -6,7 +6,9 @@ const Footer = () => {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <aside className="flex flex-col items-center md:items-start gap-5">
-            <h1 className="text-4xl md:text-5xl text-yellow-500">CoastSide</h1>
+            <h1 className="text-2xl sm:text-4xl text-yellow-500 uppercase">
+              Coastaide
+            </h1>
             <div className="flex flex-row gap-5">
               <a
                 href="#"
@@ -92,7 +94,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 pt-6 border-t border-gray-600 text-center text-sm">
-          <p>© 2025 CoastSide. All rights reserved.</p>
+          <p>© 2025 Coastside. All rights reserved.</p>
         </div>
       </Container>
     </footer>

@@ -3,7 +3,7 @@ import Container from './ui/Container';
 const Header = () => {
   return (
     <header className="bg-amber-50 text-black py-4">
-      <Container>
+      <Container className="p-3">
         <div className="flex justify-between items-center">
           <div>
             <h1 className="uppercase text-yellow-500 text-4xl">CoastSide</h1>
