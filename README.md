@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# Coastside - Hotel Booking Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Coastside is a modern hotel booking platform built with React, TypeScript, and Vite. This web application provides a seamless experience for users looking to book accommodations along the coast.
 
-Currently, two official plugins are available:
+## Project Concept
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Coastside application is designed to showcase coastal hotels and resorts, allowing users to:
 
-## Expanding the ESLint configuration
+- Browse available accommodations
+- View detailed room information
+- Check availability with an intuitive date picker
+- Book rooms directly through the platform
+- Explore local events and attractions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Key Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Modern UI**: Clean, responsive design with beautiful hotel imagery
+- **Interactive Booking**: Simple booking form with hotel selection and date picking
+- **Room Showcase**: Detailed information about available rooms and amenities
+- **Event Calendar**: Information about local events and activities
+- **About Section**: Background information about the Coastside hotels and services
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Technology Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Frontend**: React with TypeScript
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Package Manager**: npm
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Development
+
+### Prerequisites
+
+- Node.js (version 16+)
+- npm or yarn
+
+### Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+
+## Project Structure
+
+The application follows a standard React application structure:
+
+- `/src/components`: Reusable UI components
+- `/src/pages`: Main page components (Home, Rooms, Events, About)
+- `/src/assets`: Static assets like images
+- `/src/data`: Data files and configurations
