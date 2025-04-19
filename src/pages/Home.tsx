@@ -48,7 +48,7 @@ const Home = () => {
           </Container>
         </Background>
         <Container className="flex justify-center items-center sm:py-20 ">
-          <div className="h-full w-[75%] flex flex-col justify-center items-center text-black text-center gap-10 py-20">
+          <div className="h-full w-[80%] flex flex-col justify-center items-center text-black text-center gap-10 py-10">
             <h2 className="text-4xl uppercase">
               Welcome to <span className="text-yellow-500">Coastside</span>
             </h2>

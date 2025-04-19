@@ -11,27 +11,39 @@ const Header = () => {
           <nav className="hidden md:block">
             <ul className="flex flex-row gap-5">
               <li>
-                <a href="#" className="hover:text-yellow-500 transition-colors">
+                <a href="/" className="hover:text-yellow-500 transition-colors">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500 transition-colors">
-                  About us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-500 transition-colors">
+                <a
+                  href="/rooms"
+                  className="hover:text-yellow-500 transition-colors"
+                >
                   Rooms
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500 transition-colors">
+                <a
+                  href="events"
+                  className="hover:text-yellow-500 transition-colors"
+                >
                   Events
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-500 transition-colors">
+                <a
+                  href="/about"
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="contact"
+                  className="hover:text-yellow-500 transition-colors"
+                >
                   Contact
                 </a>
               </li>
