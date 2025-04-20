@@ -4,12 +4,12 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-10">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <aside className="flex flex-col items-center md:items-start gap-5">
+        <div className="grid grid-cols-1 min-[920px]:grid-cols-4 gap-8">
+          <aside className="flex flex-col items-center min-[920px]:items-start gap-5">
             <h1 className="text-2xl sm:text-4xl text-yellow-500 uppercase">
               Coastaide
             </h1>
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-row gap-5 justify-center">
               <a
                 href="#"
                 className="w-6 h-6 hover:opacity-80 transition-opacity"
@@ -23,7 +23,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="w-6 h-6 hover:opacity-80 transition-opacity"
+                className="w-7 h-7 hover:opacity-80 transition-opacity"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                   <path
@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
           </aside>
 
-          <nav className="flex flex-col items-center md:items-start">
+          <nav className="flex flex-col items-center min-[920px]:items-start">
             <h6 className="font-bold text-lg mb-4">Services</h6>
             <a className="hover:text-yellow-400 transition-colors mb-2">
               Reservations
@@ -62,7 +62,7 @@ const Footer = () => {
             </a>
           </nav>
 
-          <nav className="flex flex-col items-center md:items-start">
+          <nav className="flex flex-col items-center min-[920px]:items-start">
             <h6 className="font-bold text-lg mb-4">Company</h6>
             <a className="hover:text-yellow-400 transition-colors mb-2">
               About us
@@ -78,7 +78,7 @@ const Footer = () => {
             </a>
           </nav>
 
-          <nav className="flex flex-col items-center md:items-start">
+          <nav className="flex flex-col items-center min-[920px]:items-start">
             <h6 className="font-bold text-lg mb-4">Information</h6>
             <a className="hover:text-yellow-400 transition-colors mb-2">
               Terms and Conditions

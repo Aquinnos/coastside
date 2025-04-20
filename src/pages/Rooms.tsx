@@ -7,7 +7,7 @@ import Divider from '../components/ui/Divider';
 const Rooms = () => {
   return (
     <Layout fullWidth>
-      <div className="min-h-screen bg-amber-50">
+      <div className="min-h-screen">
         <Background imageUrl={backgrounds.rooms}>
           <Container>
             <div className="min-h-screen flex justify-center items-end">
@@ -96,7 +96,7 @@ const Rooms = () => {
           <div className="min-h-full flex flex-col justify-between items-center text-black gap-10 py-20">
             <h2 className="text-4xl uppercase mt-5">Compare Room Features</h2>
           </div>
-          <div className="flex flex-col sm:flex-row justify-center items-stretch w-full h-full text-black gap-8 mb-20">
+          <div className="flex flex-col sm:flex-row justify-center items-stretch w-full h-full text-black gap-8 mb-20 p-5">
             <div className="p-8 max-w-md flex-1 flex flex-col justify-center items-center bg-amber-300 rounded-lg min-h-[600px]">
               <h3 className="text-3xl text-center mb-6">-- Deluxe --</h3>
               <p className="text-center mb-6">

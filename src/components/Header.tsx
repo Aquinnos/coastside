@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="bg-amber-50 text-black py-4">
       <Container className="p-3">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-around items-center">
           <div>
             <h1 className="uppercase text-yellow-500 text-4xl">CoastSide</h1>
           </div>
@@ -59,23 +59,24 @@ const Header = () => {
             >
               Book
             </button>
+
+            <button className="md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
           </div>
-          <button className="md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
         </div>
       </Container>
     </header>

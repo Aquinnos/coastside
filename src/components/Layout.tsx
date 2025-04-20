@@ -22,7 +22,7 @@ const Layout = ({ children, fullWidth = false }: LayoutProps) => {
       className="flex flex-col min-h-screen"
     >
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow bg-amber-50">
         {fullWidth ? children : <Container>{children}</Container>}
       </main>
       <Footer />
