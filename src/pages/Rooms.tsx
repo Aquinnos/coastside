@@ -12,7 +12,7 @@ const Rooms = () => {
           <Container>
             <div className="min-h-screen flex justify-center items-end">
               <div className="flex flex-col sm:flex-row flex-wrap max-w-4xl items-center justify-center  text-center py-20 px-5 my-5 bg-white rounded-lg opacity-70 gap-5 text-black">
-                <h2 className="text-3xl sm:text-4xl uppercase ">Our Rooms</h2>
+                <h2 className="text-3xl sm:text-4xl uppercase ">🛏 Our Rooms</h2>
                 <p className="sm:text-lg md:text-center ">
                   Experience the perfect blend of comfort and style in our
                   thoughtfully designed rooms. Each room is a sanctuary of
@@ -50,7 +50,7 @@ const Rooms = () => {
                 </p>
                 <button
                   type="button"
-                  className="w-full p-2 bg-amber-200 rounded-lg"
+                  className="w-full p-2 bg-amber-200 rounded-lg hover:bg-amber-300 transition-colors"
                 >
                   Explore our rooms
                 </button>
@@ -85,7 +85,7 @@ const Rooms = () => {
                 </p>
                 <button
                   type="button"
-                  className="w-full p-2 bg-amber-200 rounded-lg"
+                  className="w-full p-2 bg-amber-200 rounded-lg hover:bg-amber-300 transition-colors"
                 >
                   Explore our rooms
                 </button>

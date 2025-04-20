@@ -15,7 +15,7 @@ const Home = () => {
         <Background imageUrl={backgrounds.home}>
           <Container>
             <div className="min-h-screen flex justify-center items-end py-20">
-              <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center text-black mb-8 ">
+              <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center text-black mb-8 opacity-90">
                 <div className="bg-yellow-100 p-2 h-[74px] max-[640px]:rounded-t-lg min-[640px]:rounded-l-lg">
                   <p>Hotel or Destination</p>
                   <select
@@ -91,7 +91,10 @@ const Home = () => {
                 </p>
                 <button
                   type="button"
-                  className="w-full p-2 bg-amber-200 rounded-lg"
+                  className="w-full p-2 bg-amber-200 rounded-lg hover:bg-amber-300 transition-colors"
+                  onClick={() => {
+                    window.location.href = '/rooms';
+                  }}
                 >
                   Explore our rooms
                 </button>
@@ -137,7 +140,10 @@ const Home = () => {
                 </p>
                 <button
                   type="button"
-                  className="w-full p-2 bg-amber-200 rounded-lg"
+                  className="w-full p-2 bg-amber-200 rounded-lg hover:bg-amber-300 transition-colors "
+                  onClick={() => {
+                    window.location.href = '/about';
+                  }}
                 >
                   Discover More
                 </button>

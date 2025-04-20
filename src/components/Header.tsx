@@ -6,7 +6,9 @@ const Header = () => {
       <Container className="p-3">
         <div className="flex justify-around items-center">
           <div>
-            <h1 className="uppercase text-yellow-500 text-4xl">CoastSide</h1>
+            <h1 className="uppercase text-yellow-500 text-4xl">
+              <a href="/">CoastSide</a>
+            </h1>
           </div>
           <nav className="hidden md:block">
             <ul className="flex flex-row gap-5">

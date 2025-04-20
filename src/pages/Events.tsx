@@ -52,7 +52,7 @@ const Events = () => {
                 </p>
                 <button
                   type="button"
-                  className="w-full p-2 bg-amber-200 rounded-lg"
+                  className="w-full p-2 bg-amber-200 rounded-lg hover:bg-amber-300 transition-colors"
                 >
                   Free entry for hotel guests
                 </button>
@@ -86,7 +86,7 @@ const Events = () => {
                 </p>
                 <button
                   type="button"
-                  className="w-full p-2 bg-amber-200 rounded-lg"
+                  className="w-full p-2 bg-amber-200 rounded-lg hover:bg-amber-300 transition-colors"
                 >
                   Custom packages available
                 </button>
