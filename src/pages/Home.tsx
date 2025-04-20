@@ -49,7 +49,7 @@ const Home = () => {
         </Background>
         <Container className="flex justify-center items-center sm:py-20 ">
           <div className="h-full w-[80%] flex flex-col justify-center items-center text-black text-center gap-10 py-10">
-            <h2 className="text-4xl uppercase">
+            <h2 className="text-3xl sm:text-4xl uppercase">
               Welcome to <span className="text-yellow-500">Coastside</span>
             </h2>
             <p>
@@ -71,7 +71,7 @@ const Home = () => {
 
         <Container>
           <div className="min-h-full flex flex-col justify-between items-center text-black gap-10 py-20">
-            <h2 className="text-4xl uppercase mt-5">🛏 Your Stay</h2>
+            <h2 className="text-3xl sm:text-4xl uppercase mt-5">🛏 Your Stay</h2>
             <div className="flex flex-col sm:flex-row justify-between items-center w-full h-full">
               <div className="p-5 flex-1/2">
                 <img
@@ -104,7 +104,9 @@ const Home = () => {
 
         <Container>
           <div className="relative overflow-hidden w-full h-full py-20 flex flex-col justify-center items-center gap-10">
-            <h2 className="text-4xl uppercase text-black">🎉 What’s On</h2>
+            <h2 className="text-3xl sm:text-4xl uppercase text-black">
+              🎉 What’s On
+            </h2>
             <Carousel slides={slideData} />
           </div>
         </Container>
@@ -113,7 +115,7 @@ const Home = () => {
 
         <Container>
           <div className="min-h-full flex flex-col justify-between items-center text-black gap-10 py-20">
-            <h2 className="text-4xl uppercase mt-5 max-[497px]:text-center">
+            <h2 className="text-3xl sm:text-4xl uppercase mt-5 max-[497px]:text-center">
               🛏 Savor the Experience
             </h2>
             <div className="flex flex-col sm:flex-row-reverse items-center w-full h-full">

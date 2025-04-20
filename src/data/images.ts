@@ -6,12 +6,16 @@ import hotel4 from '@/assets/images/hotel4.jpg';
 import hotel5 from '@/assets/images/hotel5.jpg';
 import hotel6 from '@/assets/images/hotel6.jpg';
 import hotel7 from '@/assets/images/hotel7.jpg';
+import spa from '@/assets/images/spa.jpg';
+import musicnight from '@/assets/images/musicnight.jpg';
 
 export const backgrounds = {
   home: homeBg,
   about: aboutBg,
   events: eventsBg,
   rooms: roomsBg,
+  spa: spa,
+  musicnight: musicnight,
   homeSection1: hotel4,
   homeSection2: hotel5,
   homeSection3: hotel6,
