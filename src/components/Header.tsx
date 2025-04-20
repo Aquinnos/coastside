@@ -6,21 +6,21 @@ const Header = () => {
       <Container className="p-3">
         <div className="flex justify-around items-center">
           <div>
-            <h1 className="uppercase text-yellow-500 text-4xl">
+            <h1 className="uppercase text-amber-300 text-4xl">
               <a href="/">CoastSide</a>
             </h1>
           </div>
           <nav className="hidden md:block">
             <ul className="flex flex-row gap-5">
               <li>
-                <a href="/" className="hover:text-yellow-500 transition-colors">
+                <a href="/" className="hover:text-amber-300 transition-colors">
                   Home
                 </a>
               </li>
               <li>
                 <a
                   href="/rooms"
-                  className="hover:text-yellow-500 transition-colors"
+                  className="hover:text-amber-300 transition-colors"
                 >
                   Rooms
                 </a>
@@ -28,7 +28,7 @@ const Header = () => {
               <li>
                 <a
                   href="events"
-                  className="hover:text-yellow-500 transition-colors"
+                  className="hover:text-amber-300 transition-colors"
                 >
                   Events
                 </a>
@@ -36,7 +36,7 @@ const Header = () => {
               <li>
                 <a
                   href="/about"
-                  className="hover:text-yellow-500 transition-colors"
+                  className="hover:text-amber-300 transition-colors"
                 >
                   About
                 </a>
@@ -44,7 +44,7 @@ const Header = () => {
               <li>
                 <a
                   href="contact"
-                  className="hover:text-yellow-500 transition-colors"
+                  className="hover:text-amber-300 transition-colors"
                 >
                   Contact
                 </a>
@@ -52,12 +52,12 @@ const Header = () => {
             </ul>
           </nav>
           <div className="flex items-center gap-4">
-            <button className="hover:text-yellow-500 transition-colors">
+            <button className="hover:text-amber-300 transition-colors">
               En
             </button>
             <button
               type="button"
-              className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition-colors"
+              className="bg-amber-300 text-white px-4 py-2 rounded hover:bg-amber-400 transition-colors"
             >
               Book
             </button>
