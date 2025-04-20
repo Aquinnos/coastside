@@ -8,6 +8,7 @@ import hotel6 from '@/assets/images/hotel6.jpg';
 import hotel7 from '@/assets/images/hotel7.jpg';
 import spa from '@/assets/images/spa.jpg';
 import musicnight from '@/assets/images/musicnight.jpg';
+import contactBg from '@/assets/images/contact.jpg';
 
 export const backgrounds = {
   home: homeBg,
@@ -15,6 +16,7 @@ export const backgrounds = {
   events: eventsBg,
   rooms: roomsBg,
   spa: spa,
+  contact: contactBg,
   musicnight: musicnight,
   homeSection1: hotel4,
   homeSection2: hotel5,

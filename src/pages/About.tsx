@@ -9,7 +9,13 @@ const About = () => {
       <div>
         <Background imageUrl={backgrounds.about}>
           <Container>
-            <div></div>
+            <div className="min-h-screen flex justify-center items-end">
+              <div className="flex flex-col sm:flex-row flex-wrap max-w-4xl items-center justify-center  text-center py-20 my-5 px-5 opacity-70 gap-5 bg-white text-black rounded-lg">
+                <h2 className="text-4xl uppercase">
+                  🌴 Coastside – Where the Sea Meets Serenity
+                </h2>
+              </div>
+            </div>
           </Container>
         </Background>
       </div>
