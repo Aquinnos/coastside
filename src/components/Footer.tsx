@@ -6,7 +6,7 @@ const Footer = () => {
       <Container>
         <div className="grid grid-cols-1 min-[920px]:grid-cols-4 gap-8">
           <aside className="flex flex-col items-center min-[920px]:items-start gap-5">
-            <h1 className="text-2xl sm:text-4xl text-yellow-500 uppercase">
+            <h1 className="text-2xl sm:text-4xl text-amber-300 uppercase">
               Coastaide
             </h1>
             <div className="flex flex-row gap-5 justify-center">

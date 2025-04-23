@@ -15,33 +15,102 @@ const Home = () => {
         <Background imageUrl={backgrounds.home}>
           <Container>
             <div className="min-h-screen flex justify-center items-end py-20">
-              <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center text-black mb-8 opacity-90">
-                <div className="bg-yellow-100 p-2 h-[74px] max-[640px]:rounded-t-lg min-[640px]:rounded-l-lg">
-                  <p>Hotel or Destination</p>
-                  <select
-                    name="select"
-                    id="select"
-                    className="w-full border-1 border-black rounded-lg p-1"
+              <div className="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 w-full max-w-3xl">
+                <h3 className="text-xl font-semibold mb-4 text-amber-300">
+                  Book Your Stay
+                </h3>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex-1">
+                    <label
+                      htmlFor="select"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      Hotel or Destination
+                    </label>
+                    <div className="relative">
+                      <select
+                        name="select"
+                        id="select"
+                        className="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition-all appearance-none text-black"
+                      >
+                        <option value="">Select location</option>
+                        <option value="coastside-main">
+                          Coastside Main Hotel
+                        </option>
+                        <option value="coastside-beach">
+                          Coastside Beach Resort
+                        </option>
+                        <option value="coastside-mountain">
+                          Coastside Mountain Lodge
+                        </option>
+                      </select>
+                      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 9l-7 7-7-7"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex-1">
+                    <label
+                      htmlFor="arrival"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      Arrival Date
+                    </label>
+                    <input
+                      type="date"
+                      id="arrival"
+                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition-all text-black"
+                    />
+                  </div>
+
+                  <div className="flex-1 ">
+                    <label
+                      htmlFor="departure"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      Departure Date
+                    </label>
+                    <input
+                      type="date"
+                      id="departure"
+                      className="w-full p-3 border border-gray-300  rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition-all text-black"
+                    />
+                  </div>
+                </div>
+
+                <div className="mt-6 flex justify-end">
+                  <button
+                    type="button"
+                    className="bg-amber-200 hover:bg-amber-300 text-black px-8 py-3 rounded-lg font-medium shadow-md transition-colors flex items-center"
                   >
-                    <option value="Select">Select</option>
-                  </select>
-                </div>
-                <div className="bg-yellow-200 p-2">
-                  <p>Arrival</p>
-                  <input
-                    type="date"
-                    className="border-1 border-black rounded-lg p-1"
-                  />
-                </div>
-                <div className="bg-yellow-300 p-2">
-                  <p>Departure</p>
-                  <input
-                    type="date"
-                    className="border-1 border-black rounded-lg p-1"
-                  />
-                </div>
-                <div className="bg-yellow-400 p-2 sm:min-h-[74px] flex items-center justify-center max-[640px]:rounded-b-lg min-[640px]:rounded-r-lg w-full sm:w-[75px]">
-                  <button type="button">Book</button>
+                    <svg
+                      className="w-5 h-5 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                    Book Now
+                  </button>
                 </div>
               </div>
             </div>
