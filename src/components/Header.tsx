@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import Container from './ui/Container';
+import Sidebar from './Sidebar';
 
 const Header = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <header className="bg-amber-50 text-black py-4">
       <Container className="p-3">
@@ -52,17 +60,21 @@ const Header = () => {
             </ul>
           </nav>
           <div className="flex items-center gap-4">
-            <button className="hover:text-amber-300 transition-colors">
+            <button className="hover:text-amber-300 transition-colors hidden sm:block">
               En
             </button>
             <button
               type="button"
-              className="bg-amber-300 text-white px-4 py-2 rounded hover:bg-amber-400 transition-colors"
+              className="bg-amber-200 text-black px-4 py-2 rounded hover:bg-amber-300 transition-colors hidden sm:block"
             >
               Book
             </button>
 
-            <button className="md:hidden">
+            <button
+              className="md:hidden"
+              onClick={toggleSidebar}
+              aria-label="Toggle menu"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -81,6 +93,9 @@ const Header = () => {
           </div>
         </div>
       </Container>
+
+      {/* Mobile Sidebar */}
+      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
     </header>
   );
 };
